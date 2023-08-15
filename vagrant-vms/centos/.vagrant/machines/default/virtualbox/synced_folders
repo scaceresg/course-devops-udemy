@@ -1,0 +1,1 @@
+{"rsync":{"/vagrant":{"type":"rsync","guestpath":"/vagrant","hostpath":"G:/Mi unidad/GitHub/course-devops-udemy/vagrant-vms/centos","disabled":false,"__vagrantfile":true,"owner":"vagrant","group":"vagrant"}}}
