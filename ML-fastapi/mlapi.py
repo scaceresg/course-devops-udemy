@@ -18,12 +18,12 @@ class BankNote(BaseModel):
 app = FastAPI()
 
 # Get request (localhost: http://127.0.0.1:8000)
-# @app.get('/')
-# def index():
-#     return {'message': 'Hello there!'}
+@app.get('/')
+def root():
+    return {'status': 'OK'}
 
 # Post request
-@app.post('/')
+@app.post('/predict')
 def authenticate(note:BankNote):
     data = pd.DataFrame([note.dict().values()], columns=note.dict().keys())
     y_pred = model.predict(data)
